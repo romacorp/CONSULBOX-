@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",                      // Nivel de ES soportado; es5 funciona bien para la mayoría de los navegadores.
+    "module": "commonjs",                 // Sistema de módulos usado; común en proyectos Node.js.
+    "outDir": "build",                    // Carpeta donde se generarán los archivos compilados.
+    "noImplicitAny": true,                // Evita tipos `any` implícitos, para un mejor control de tipos.
+    "moduleResolution": "node",           // Método de resolución de módulos.
+    "resolveJsonModule": true,            // Permite importar archivos JSON.
+    "esModuleInterop": true,              // Mejora la interoperabilidad con módulos ES6.
+    "allowSyntheticDefaultImports": true, // Permite importar módulos sin soporte explícito de exportaciones por defecto.
+    "skipLibCheck": true,                 // Omite la comprobación de tipos en archivos de declaración de bibliotecas.
+    "jsx": "react-jsx"                    // Habilita soporte para JSX; usa `react-jsx` para React 17+ o `react` para versiones más antiguas.
+  },
+  "include": ["src/**/*"]                 // Incluye todos los archivos dentro de la carpeta `src`.
+}
